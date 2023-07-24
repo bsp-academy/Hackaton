@@ -1,0 +1,172 @@
+/* Общие стили для страницы */
+body {
+    margin: auto;
+    font-family: Arial, sans-serif;
+    width: 1024px;
+  }
+
+  /* Стили для контейнера титула */
+.title {
+    background-color: rgb(20,27,37);
+    height: 768px;
+    padding: 0px;
+    position: relative; /* Добавим позиционирование "relative" для контейнера */
+    text-align: center;
+}
+
+/* Стили для названия игры*/
+.Nameplay {
+    margin-top: 330px;
+    align-items: center;
+}
+
+ /* Стили для страницы с выбором героев*/
+.heroic-container {
+    background-color: rgb(20,27,37);
+    height: 768px;
+    padding: 0px;
+    position: relative; /* Добавим позиционирование "relative" для контейнера */
+    text-align: center;
+}
+
+ /* Стили для размещения героев*/
+.heroic {
+    margin: 170px 0px 50px 100px;
+    position: relative;
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+}
+.girl {
+    height: 500px;
+}
+/* Стили для размещения робота и его текста*/
+.robotsay {
+    margin: -800px 0 0 400px;
+    position: relative;
+    z-index: 2;
+}
+.robot {
+    width: 350px;
+    margin: -70px 0px 0px 310px;
+}
+
+/* Стили для размещения пунктирных линий*/
+.way {
+    position: relative;
+    z-index: 2;
+}
+.way1 {
+    margin: -500px 0px 350px -350px;
+}
+.way2 {
+    margin: 0px 150px 0px -150px;
+}
+.way3 {
+    margin: -820px 0px 750px 300px;
+}
+
+  /* Стили для контейнера с картой и пройденными этапами */
+  .container {
+    padding: 0;
+    position: relative; /* Добавим позиционирование "relative" для контейнера */
+    text-align: center;
+  }
+  
+  /* Стили для логотипа */
+  .logo {
+    width: 112px;
+    height: 42px;
+    position: relative;
+    top: 40px;
+    left: -420px;
+    z-index: 1;
+  }
+  
+  /* Стили для карты */
+  .map {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Стили для кнопки-метки на карте */
+  .place {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Стили для номеров этапов на карте */
+  .level-item {
+    position: relative; /* Относительное позиционирование для номеров этапов */
+    top: 50px; /* Регулируйте вертикальное положение номеров на карте */
+    left: 100px; /* Регулируйте горизонтальное положение номеров на карте */
+  }
+   .dot {
+    cursor: pointer;       
+  }
+  
+  /* Стили для пройденных номеров этапов */
+  .level-item.passed .dot {
+    opacity: 0.5;
+    cursor: default; /* Установим курсор в виде обычного указателя */
+  }
+  
+  /* Стили для таймера */
+  .time {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 150px;
+    position: relative;
+    bottom: 170px;
+    left: 850px;
+    z-index: 1;
+  }
+  
+  /* Стили для кнопки-ноты музыки */
+  .nota {
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  /* Стили для текста задачи */
+  .task-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    white-space: pre-wrap;
+  }
+  
+  /* Стили для активной кнопки этапа */
+  .level-item .dot.active {
+    opacity: 1;
+  }
+  
+  /* Стили для пройденной кнопки этапа */
+  .level-item .dot.passed {
+    opacity: 0.5;
+  }
+  
+  /* Адаптивные стили для различных экранов */
+  @media screen and (max-width: 768px) {
+    /* Для мобильных устройств */
+    .place {
+      top: 40%;
+    }
+    
+    .task-text {
+      font-size: 14px;
+    }
+  }
