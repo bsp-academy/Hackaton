@@ -141,7 +141,69 @@ body {
   margin: -100px 790px;
   }
 
+/* Стили для текста вопроса*/
+.question {
+  position: absolute;
+  margin: -440px 300px;
+  width: 600px;
+  height: 64px;
+  background: none;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #DBE2F9;
+}
 
+/* Стили для текстов ответов*/
+.answer1 {
+  position: absolute;
+  margin: -250px 300px;
+  width: 196px;
+  height: 40px;
+  background: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.answer2 {
+  position: absolute;
+  margin: -250px 600px;
+  width: 196px;
+  height: 40px;
+  background: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.answer3 {
+  position: absolute;
+  margin: -160px 300px;
+  width: 196px;
+  height: 40px;
+  background: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.answer4 {
+  position: absolute;
+  margin: -160px 600px;
+  width: 196px;
+  height: 40px;
+  background: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
 
 /* Стили для таймера */
 .time {
