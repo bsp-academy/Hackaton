@@ -18,6 +18,10 @@ const pageNames = [
   "#page-quizz-woman-4",
   "#page-quizz-man-5",
   "#page-quizz-woman-5",
+  "#page-answer-1-yes",
+  "#page-answer-1-no",
+  "#page-answer-2-yes",
+  "#page-answer-2-no"
 ];
 
 let SEX = '';
@@ -90,8 +94,12 @@ function initAnswers() {
             */
 
             // в массив ANSWERS сохраняем правильный или неправильный ответ
-            ANSWERS[i] = el.target.getAttribute('data')
-            showPage(`#page-answer-${i}`)
+            ANSWERS[i] = this.getAttribute('data')
+            if (ANSWERS[i] === 'correct') {
+              showPage(`#page-answer-${i}-yes`)
+            } else {
+              showPage(`#page-answer-${i}-no`)
+            }
             console.log(ANSWERS);
           });
         } catch (e) { }
