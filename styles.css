@@ -103,6 +103,46 @@ body {
   transform: translateX(5px);
 }
 
+/* Стили для кнопки Следующий вопрос*/
+.btn-arrow {
+  width: 284px;
+  height: 60px;
+  background: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  background-color: #89E159;
+  color: #000000;
+  border: 2px solid #89E159;
+  border-radius: 8px;
+}
+#page-quizz-answerY-button {
+  position: absolute;
+  margin: -100px 700px;
+  }
+
+/* Стили для кнопки Вернуться*/
+.btn-again {
+  width: 193px;
+  height: 60px;
+  background: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+  background-color: #89E159;
+  color: #000000;
+  border: 2px solid #89E159;
+  border-radius: 8px;
+}
+#page-quizz-answerN-button {
+  position: absolute;
+  margin: -100px 790px;
+  }
+
+
+
 /* Стили для таймера */
 .time {
   display: flex;

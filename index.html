@@ -36,6 +36,7 @@
             <div class="heroic-name">
                 <input id="item-form-name-woman" type="text" class="item-form-name" placeholder="Напиши имя героя">
                 <button class="btn-start" id="button-go-woman">Поехали!</button>
+            </div>
         </section>
 
         <section class="map2-container" id="page-map-1">
@@ -82,8 +83,18 @@
                 <img class="arrow-link" src="./img/link.svg" alt="Переход на след станицу">
             </div>
         </section>
-
-
+        <section class="map2-container" id="page-answer-yes">
+            <img class='pagename' src="./img/Answer_Y.png" alt="Фон страницы с верным ответом">
+            <div id="page-quizz-answerY-button">
+                <button class="btn-arrow" id="button-arrow">Следующий вопрос</button>
+            </div>
+        </section>
+        <section class="map2-container" id="page-answer-no">
+            <img class='pagename' src="./img/Answer_N.png" alt="Фон страницы с отрицательным ответом">
+            <div id="page-quizz-answerN-button">
+                <button class="btn-again" id="button-again">Вернуться</button>
+            </div>
+        </section>
 
 
         <section class="map2-container" id="page-quizz-man-2">
@@ -105,14 +116,14 @@
             </div>
         </section>
 
+
+
+
         <section class="map2-container" id="page-map-2">
             <div class="map">
                 <img src="./img/map2.png" class="Map" alt="Карта этапов игры">
             </div>
         </section>
-
-
-
         <section class="map3-container" id="page-map-3">
             <div class="map">
                 <img src="./img/map3.png" class="Map" alt="Карта этапов игры">
@@ -128,70 +139,8 @@
                 <img src="./img/map5.png" class="Map" alt="Карта этапов игры">
             </div>
         </section>
-
-        <section class="map2-container" id="page-quizz-man-1">
-            Вопрос 1 для мужчин
-            <div id="page-quizz-man-1-answer-1" data="correct">
-                ANSWER 1
-            </div>
-            <div id="page-quizz-man-1-answer-2" data="wrong">
-                ANSWER 2
-            </div>
-            <div id="page-quizz-man-1-answer-3" data="wrong">
-                ANSWER 3
-            </div>
-            <div id="page-quizz-man-1-answer-4" data="wrong">
-                ANSWER 4
-            </div>
-            <div id="page-quizz-man-1-button">
-                <button>Ответить</button>
-            </div>
-        </section>
-
-        <section class="map2-container" id="page-quizz-man-2">
-            Вопрос 2 для мужчин
-            <div id="page-quizz-man-2-answer-1" data="correct">
-                ANSWER 1
-            </div>
-            <div id="page-quizz-man-2-answer-2" data="wrong">
-                ANSWER 2
-            </div>
-            <div id="page-quizz-man-2-answer-3" data="wrong">
-                ANSWER 3
-            </div>
-            <div id="page-quizz-man-2-answer-4" data="wrong">
-                ANSWER 4
-            </div>
-            <div id="page-quizz-man-2-button">
-                <button>Ответить</button>
-            </div>
-        </section>
-
-
-        <section class="map2-container" id="page-quizz-woman-1">
-            Вопрос 1 для женщин
-            <div id="page-quizz-woman-2-answer-1" data="correct">
-                ANSWER 1
-            </div>
-            <div id="page-quizz-woman-2-answer-2" data="wrong">
-                ANSWER 2
-            </div>
-            <div id="page-quizz-woman-2-answer-3" data="wrong">
-                ANSWER 3
-            </div>
-            <div id="page-quizz-woman-2-answer-4" data="wrong">
-                ANSWER 4
-            </div>
-            <div id="page-quizz-woman-2-button">
-                <button>Ответить</button>
-            </div>
-        </section>
-
         
         <div class='timer'></div>
-
-        console.log("!!!", elapsedTime)
-
 
         <section class="container" id="page-map-old">
             <div class="map-container">
