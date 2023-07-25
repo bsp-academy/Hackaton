@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalabel=0">
@@ -7,125 +8,204 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Times in AGRO</title>
 </head>
+
 <body>
     <main>
-        <section class="title">
+        <section class="title" id="page-logo">
             <img class='logo' src="./img/logo.svg" alt="Лого РСХБ">
             <div class="name">
                 <img src="./img/title.png" class="Nameplay" alt="название игры">
             </div>
         </section>
-        <section class="heroic-container">
+        <section class="heroic-container" id="page-name">
             <img class='logo' src="./img/logo.svg" alt="Лого РСХБ">
-                <div class="heroic">
-                    <img src="./img/man.png" class="man" alt="Герой-парень">
-                    <img src="./img/girl.png" class="girl" alt="Герой-девушка">
-                </div>
-                <div class="robotsay">
-                    <img src="./img/text 1.png" class="text1" alt="Текст робота">
-                    <img src="./img/robot.png" class="robot" alt="Ведущий-робот">
-                </div>
-                <div class="way">
-                    <img class='way1' src="./img/way 1.png" alt="Зеленый маршрут">
-                    <img class='way2' src="./img/way 2.png" alt="Красный маршрут">
-                    <img class='way3' src="./img/way 3.png" alt="Серый маршрут">
-                </div>
+            <div class="heroic">
+                <img src="./img/man.png" class="man" alt="Герой-парень" id="page-name-image-man">
+                <img src="./img/girl.png" class="girl" alt="Герой-девушка" id="page-name-image-woman">
+            </div>
+            <div class="robotsay">
+                <img src="./img/text 1.png" class="text1" alt="Текст робота">
+                <img src="./img/robot.png" class="robot" alt="Ведущий-робот">
+            </div>
+            <!--
+            <div class="way">
+                <img class='way1' src="./img/way 1.png" alt="Зеленый маршрут">
+                <img class='way2' src="./img/way 2.png" alt="Красный маршрут">
+                <img class='way3' src="./img/way 3.png" alt="Серый маршрут">
+            </div>
+            -->
+        </section>
+        <section class="heroic1-container" id="page-name-man">
+            <img class='logo' src="./img/logo.svg" alt="Лого РСХБ">
+            <div class="heroic">
+                <img src="./img/man.png" class="man" alt="Герой-парень">
+            </div>
+            <div class="robotsay">
+                <img src="./img/text 2.png" class="text1" alt="Текст робота">
+                <img src="./img/robot.png" class="robot" alt="Ведущий-робот">
+            </div>
+            <div class="heroic-name">
+                <input id="item-form-name-man" type="text" class="item-form-name" placeholder="Напиши имя героя">
+            </div>
+            <button class="btn-start" id="button-go-man">Поехали!</button>
+            <!--
+            <div class="way">
+                <img class='way1' src="./img/way 1.png" alt="Зеленый маршрут">
+                <img class='way2' src="./img/way 2.png" alt="Красный маршрут">
+                <img class='way3' src="./img/way 3.png" alt="Серый маршрут">
+            </div>
+            -->
+        </section>
+        <section class="heroic2-container" id="page-name-woman">
+            <img class='logo' src="./img/logo.svg" alt="Лого РСХБ">
+            <div class="heroic">
+                <img src="./img/girl.png" class="girl" alt="Герой-девушка">
+            </div>
+            <div class="robotsay">
+                <img src="./img/text 2.png" class="text1" alt="Текст робота">
+                <img src="./img/robot.png" class="robot" alt="Ведущий-робот">
+            </div>
+            <div class="heroic-name">
+                <input id="item-form-name-woman" type="text" class="item-form-name" placeholder="Напиши имя героя">
+            </div>
+            <button class="btn-start" id="button-go-woman">Поехали!</button>
+            <!--
+            <div class="way">
+                <img class='way1' src="./img/way 1.png" alt="Зеленый маршрут">
+                <img class='way2' src="./img/way 2.png" alt="Красный маршрут">
+                <img class='way3' src="./img/way 3.png" alt="Серый маршрут">
+            </div>
+            -->
+        </section>
+        <section class="map2-container" id="page-map-1">
+            <div class="map">
+                <img src="./img/map.png" class="Map" alt="Карта этапов игры">
             </div>
         </section>
-        <section class="heroic1-container">
-            <img class='logo' src="./img/logo.svg" alt="Лого РСХБ">
-                <div class="heroic">
-                    <img src="./img/man.png" class="man" alt="Герой-парень">
-                </div>
-                <div class="robotsay">
-                    <img src="./img/text 2.png" class="text1" alt="Текст робота">
-                    <img src="./img/robot.png" class="robot" alt="Ведущий-робот">
-                </div>
-                <div class="heroic-name">
-                    <input id="item-form-name" type="text" class="item-form-name" placeholder="Напиши имя героя">
-                </div>
-                <button class="btn-start">Поехали!</button>   
-                <div class="way">
-                    <img class='way1' src="./img/way 1.png" alt="Зеленый маршрут">
-                    <img class='way2' src="./img/way 2.png" alt="Красный маршрут">
-                    <img class='way3' src="./img/way 3.png" alt="Серый маршрут">
-                </div>
+        <section class="map2-container" id="page-map-2">
+            <div class="map">
+                <img src="./img/map2.png" class="Map" alt="Карта этапов игры">
             </div>
         </section>
-        <section class="heroic2-container">
-            <img class='logo' src="./img/logo.svg" alt="Лого РСХБ">
-                <div class="heroic">
-                    <img src="./img/girl.png" class="girl" alt="Герой-девушка">
-                </div>
-                <div class="robotsay">
-                    <img src="./img/text 2.png" class="text1" alt="Текст робота">
-                    <img src="./img/robot.png" class="robot" alt="Ведущий-робот">
-                </div>
-                <div class="heroic-name">
-                    <input id="item-form-name" type="text" class="item-form-name" placeholder="Напиши имя героя">
-                </div>
-                <button class="btn-start">Поехали!</button>   
-                <div class="way">
-                    <img class='way1' src="./img/way 1.png" alt="Зеленый маршрут">
-                    <img class='way2' src="./img/way 2.png" alt="Красный маршрут">
-                    <img class='way3' src="./img/way 3.png" alt="Серый маршрут">
-                </div>
+        <section class="map3-container" id="page-map-3">
+            <div class="map">
+                <img src="./img/map3.png" class="Map" alt="Карта этапов игры">
             </div>
         </section>
-        <section class="container">
-                <div class="map-container">
-                    <img class='logo' src="./img/logo.svg" alt="Лого РСХБ">
-                   
-                    <div class="map">
-                        <img src="./img/map.png" class="Map" alt="Карта этапов игры">
-                        <img src="./img/place.png" class="place" alt="Метка местонахождения на этапе игры">
-                        <div class="level">
-                            <img class='dot' src="./img/levels 1.png" alt="1 уровень">
-                            <img class='dot' src="./img/levels 2.png" alt="2 уровень">
-                            <img class='dot' src="./img/levels 3.png" alt="3 уровень">
-                            <img class='dot' src="./img/levels 4.png" alt="4 уровень">
-                            <img class='dot' src="./img/levels 5.png" alt="5 уровень">
-                        </div>
-                    </div>      
-                        <div class="level-out">
-                            <img class='dot' src="./img/levels1.png" alt="Пройден 1 уровень">
-                            <img class='dot' src="./img/levels2.png" alt="Пройден 2 уровень">
-                            <img class='dot' src="./img/levels3.png" alt="Пройден 3 уровень">
-                            <img class='dot' src="./img/levels4.png" alt="Пройден 4 уровень">
-                        </div>
-                        <div class="time">
-                            <img class='nota' src="./img/music.png" alt="Нота">
-                            <div class="timer">
-                                <img src="./img/timer.png" class="timer" alt="Таймер игры">
-                            </div>    
-                        </div>
-                </div>
-                <div class="map2-container">
-                    <div class="map">
-                        <img src="./img/map2.png" class="Map" alt="Карта этапов игры">
+        <section class="map4-container" id="page-map-4">
+            <div class="map">
+                <img src="./img/map4.png" class="Map" alt="Карта этапов игры">
+            </div>
+        </section>
+        <section class="map4-container" id="page-map-5">
+            <div class="map">
+                <img src="./img/map5.png" class="Map" alt="Карта этапов игры">
+            </div>
+        </section>
+
+        <section class="map2-container" id="page-quizz-man-1">
+            Вопрос 1 для мужчин
+            <div id="page-quizz-man-1-answer-1" data="correct">
+                ANSWER 1
+            </div>
+            <div id="page-quizz-man-1-answer-2" data="wrong">
+                ANSWER 2
+            </div>
+            <div id="page-quizz-man-1-answer-3" data="wrong">
+                ANSWER 3
+            </div>
+            <div id="page-quizz-man-1-answer-4" data="wrong">
+                ANSWER 4
+            </div>
+            <div id="page-quizz-man-1-button">
+                <button>Ответить</button>
+            </div>
+        </section>
+
+        <section class="map2-container" id="page-quizz-man-2">
+            Вопрос 2 для мужчин
+            <div id="page-quizz-man-2-answer-1" data="correct">
+                ANSWER 1
+            </div>
+            <div id="page-quizz-man-2-answer-2" data="wrong">
+                ANSWER 2
+            </div>
+            <div id="page-quizz-man-2-answer-3" data="wrong">
+                ANSWER 3
+            </div>
+            <div id="page-quizz-man-2-answer-4" data="wrong">
+                ANSWER 4
+            </div>
+            <div id="page-quizz-man-2-button">
+                <button>Ответить</button>
+            </div>
+        </section>
+
+
+        <section class="map2-container" id="page-quizz-woman-1">
+            Вопрос 1 для женщин
+        </section>
+
+        <div class='timer'></div>
+
+        <section class="container" id="page-map-old">
+            <div class="map-container">
+                <img class='logo' src="./img/logo.svg" alt="Лого РСХБ">
+
+                <div class="map">
+                    <img src="./img/map.png" class="Map" alt="Карта этапов игры">
+                    <img src="./img/place.png" class="place" alt="Метка местонахождения на этапе игры">
+                    <div class="level">
+                        <img class='dot' src="./img/levels 1.png" alt="1 уровень">
+                        <img class='dot' src="./img/levels 2.png" alt="2 уровень">
+                        <img class='dot' src="./img/levels 3.png" alt="3 уровень">
+                        <img class='dot' src="./img/levels 4.png" alt="4 уровень">
+                        <img class='dot' src="./img/levels 5.png" alt="5 уровень">
                     </div>
                 </div>
-                <div class="map3-container">
-                    <div class="map">
-                        <img src="./img/map3.png" class="Map" alt="Карта этапов игры">
+                <div class="level-out">
+                    <img class='dot' src="./img/levels1.png" alt="Пройден 1 уровень">
+                    <img class='dot' src="./img/levels2.png" alt="Пройден 2 уровень">
+                    <img class='dot' src="./img/levels3.png" alt="Пройден 3 уровень">
+                    <img class='dot' src="./img/levels4.png" alt="Пройден 4 уровень">
+                </div>
+                <div class="time">
+                    <img class='nota' src="./img/music.png" alt="Нота">
+                    <div class="timer">
+                        <img src="./img/timer.png" class="timer" alt="Таймер игры">
                     </div>
                 </div>
-                <div class="map4-container">
-                    <div class="map">
-                        <img src="./img/map4.png" class="Map" alt="Карта этапов игры">
-                    </div>
+            </div>
+            <div class="map2-container">
+                <div class="map">
+                    <img src="./img/map2.png" class="Map" alt="Карта этапов игры">
                 </div>
-                <div class="map4-container">
-                    <div class="map">
-                        <img src="./img/map5.png" class="Map" alt="Карта этапов игры">
-                    </div>
+            </div>
+            <div class="map3-container">
+                <div class="map">
+                    <img src="./img/map3.png" class="Map" alt="Карта этапов игры">
                 </div>
+            </div>
+            <div class="map4-container">
+                <div class="map">
+                    <img src="./img/map4.png" class="Map" alt="Карта этапов игры">
+                </div>
+            </div>
+            console.log("!!!", elapsedTime)
+            <div class="map4-container">
+                <div class="map">
+                    <img src="./img/map5.png" class="Map" alt="Карта этапов игры">
+                </div>
+            </div>
         </section>
         <script src="script.js"></script> <!-- Путь к файлу JavaScript -->
-        
+
         <audio id="bg-music" loop>
             <source src=".music/music.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
-          </audio>
+        </audio>
+
+
 </body>
+
 </html>
