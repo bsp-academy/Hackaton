@@ -38,6 +38,9 @@
                 <button class="btn-start" id="button-go-woman">Поехали!</button>
             </div>
         </section>
+        <section class="robo" id="page-robo">
+            <img class='pagename' src="./img/page4.png" alt="Фон страницы">
+        </section>
 
         <section class="map2-container" id="page-map-1">
             <div class="map">
@@ -46,7 +49,7 @@
         </section>
         <section class="map2-container" id="page-quizz-man-1">
             <img class='pagename' src="./img/Question_1M.png" alt="Фон страницы с вопросом">
-            <h4 class="question"> Что из перечисленного НЕ делает робот-помощник Feed Pusher?</h4>
+                <h4 class="question"> Что из перечисленного НЕ делает робот-помощник Feed Pusher?</h4>
             <div id="page-quizz-man-1-answer-1" data="wrong">
                 <p class="answer1">Анализирует насыщенность витаминами корма</p>
             </div>
@@ -66,7 +69,7 @@
 
         <section class="map2-container" id="page-quizz-woman-1">
             <img class='pagename' src="./img/Question_1W.png" alt="Фон страницы с вопросом">
-            <h4 class="question"> Что из перечисленного НЕ делает робот-помощник Feed Pusher?</h4>
+                <h4 class="question"> Что из перечисленного НЕ делает робот-помощник Feed Pusher?</h4>
             <div id="page-quizz-woman-1-answer-1" data="wrong">
                 <p class="answer1">Анализирует насыщенность витаминами корма</p>
             </div>
@@ -83,50 +86,46 @@
                 <button class="arrow-link" src="./img/Buttons.svg"></button>
             </div>
         </section>
-
-        <section class="map2-container" id="page-answer-1-yes">
+        <section class="map2-container" id="page-answer-yes">
             <img class='pagename' src="./img/Answer_Y.png" alt="Фон страницы с верным ответом">
             <div id="page-quizz-answerY-button">
-                <button class="btn-arrow" id="button-arrow" onclick="showPage(`#page-quizz-man-2`)">Следующий
-                    вопрос</button>
+                <button class="btn-arrow" id="button-arrow">Следующий вопрос</button>
             </div>
         </section>
-        <section class="map2-container" id="page-answer-1-no">
+        <section class="map2-container" id="page-answer-no">
             <img class='pagename' src="./img/Answer_N.png" alt="Фон страницы с отрицательным ответом">
             <div id="page-quizz-answerN-button">
-                <button class="btn-again" id="button-again" onclick="showPage(`#page-quizz-man-1`)">Вернуться</button>
+                <button class="btn-again" id="button-again">Вернуться</button>
             </div>
         </section>
 
         <section class="map2-container" id="page-quizz-man-2">
             <img class='pagename' src="./img/Question_1M.png" alt="Фон страницы с вопросом">
-            <h4 class="question"> В сельском хозяйстве давно используют генную модификацию, чтобы сделать животных более
-                безопасными.
-                Например, выводят голштинских коров.
+            <h4 class="question"> В сельском хозяйстве давно используют генную модификацию, чтобы сделать животных более безопасными. 
+                Например, выводят голштинских коров. 
                 Как ты думаешь, какая мутация у них?</h4>
-            <div id="page-quizz-man-2-answer-1" data="correct">
-                <p class="answer1">Нет рогов</p>
-            </div>
-            <div id="page-quizz-man-2-answer-2" data="wrong">
-                <p class="answer2">Нет пятен на шерсти</p>
-            </div>
-            <div id="page-quizz-man-2-answer-3" data="wrong">
-                <p class="answer3">Нет ушей </p>>
-            </div>
-            <div id="page-quizz-man-2-answer-4" data="wrong">
-                <p class="answer4">Шерсть красного цвета</p>
-            </div>
-            <div id="page-quizz-man-2-button">
-                <button class="arrow-link" src="./img/Buttons.svg"></button>
-            </div>
+        <div id="page-quizz-man-2-answer-1" data="correct">
+            <p class="answer1">Нет рогов</p>
+        </div>
+        <div id="page-quizz-man-2-answer-2" data="wrong">
+            <p class="answer2">Нет пятен на шерсти</p>
+        </div>
+        <div id="page-quizz-man-2-answer-3" data="wrong">
+            <p class="answer3">Нет ушей  </p>>
+        </div>
+        <div id="page-quizz-man-2-answer-4" data="wrong">
+            <p class="answer4">Шерсть красного цвета</p>
+        </div>
+        <div id="page-quizz-man-2-button">
+            <button class="arrow-link" src="./img/Buttons.svg"></button>
+        </div>
         </section>
 
         <section class="map2-container" id="page-quizz-woman-2">
             <img class='pagename' src="./img/Question_1W.png" alt="Фон страницы с вопросом">
-            <h4 class="question"> В сельском хозяйстве давно используют генную модификацию, чтобы сделать животных более
-                безопасными.
-                Например, выводят голштинских коров.
-                Как ты думаешь, какая мутация у них?</h4>
+                <h4 class="question"> В сельском хозяйстве давно используют генную модификацию, чтобы сделать животных более безопасными. 
+                    Например, выводят голштинских коров. 
+                    Как ты думаешь, какая мутация у них?</h4>
             <div id="page-quizz-woman-2-answer-1" data="correct">
                 <p class="answer1">Нет рогов</p>
             </div>
@@ -141,21 +140,6 @@
             </div>
             <div id="page-quizz-woman-2-button">
                 <button class="arrow-link" src="./img/Buttons.svg"></button>
-            </div>
-        </section>
-
-
-        <section class="map2-container" id="page-answer-2-yes">
-            <img class='pagename' src="./img/Answer_Y.png" alt="Фон страницы с верным ответом">
-            <div id="page-quizz-answerY-button">
-                <button class="btn-arrow" id="button-arrow" onclick="showPage(`#page-map-2`)">Следующий
-                    вопрос</button>
-            </div>
-        </section>
-        <section class="map2-container" id="page-answer-2-no">
-            <img class='pagename' src="./img/Answer_N.png" alt="Фон страницы с отрицательным ответом">
-            <div id="page-quizz-answerN-button">
-                <button class="btn-again" id="button-again" onclick="showPage(`#page-quizz-man-2`)">Вернуться</button>
             </div>
         </section>
 
@@ -180,12 +164,12 @@
                 <img src="./img/map5.png" class="Map" alt="Карта этапов игры">
             </div>
         </section>
-
+        
         <div class='timer'></div>
 
         <section class="container" id="page-map-old">
             <div class="map-container">
-
+    
                 <div class="time">
                     <img class='nota' src="./img/music.png" alt="Нота">
                     <div class="timer">
@@ -197,7 +181,7 @@
 
         </section>
 
-
+        
         <script src="script.js"></script> <!-- Путь к файлу JavaScript -->
 
         <audio id="bg-music" loop>
