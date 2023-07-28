@@ -3,21 +3,14 @@ const pageNames = [
   "#page-name",
   "#page-name-man",
   "#page-name-woman",
+  "#page-robo",
   "#page-map-1",
   "#page-map-2",
   "#page-map-3",
   "#page-map-4",
   "#page-map-5",
-  "#page-quizz-man-1",
-  "#page-quizz-woman-1",
-  "#page-quizz-man-2",
-  "#page-quizz-woman-2",
-  "#page-quizz-man-3",
-  "#page-quizz-woman-3",
-  "#page-quizz-man-4",
-  "#page-quizz-woman-4",
-  "#page-quizz-man-5",
-  "#page-quizz-woman-5",
+  "#page-quizz-1",
+  "#page-quizz-2",
   "#page-answer-1-yes",
   "#page-answer-1-no",
   "#page-answer-2-yes",
@@ -66,14 +59,15 @@ function initAnswers() {
       // инициализируем страницы с опросами (5 штук)
       try {
         document.querySelector('#page-map-' + i).addEventListener('click', function () {
-          if (SEX === 'man') {
-            showPage('#page-quizz-man-' + i)
-          } else {
-            showPage('#page-quizz-woman-' + i)
-          }
+          showPage('#page-quizz-' + i)
+          //if (SEX === 'man') {
+          //  showPage('#page-quizz-man-' + i)
+          //} else {
+          //  showPage('#page-quizz-woman-' + i)
+          //}
         })
 
-        document.querySelector('#page-quizz-man-' + i + '-button').addEventListener('click', function () {
+        document.querySelector('#page-quizz-' + i + '-button').addEventListener('click', function () {
           showPage(`#page-map-${i + 1}`)
         })
       } catch (e) { }
@@ -82,7 +76,7 @@ function initAnswers() {
       // в каждом опроса инициализируем обработку нажатий по 4 ответам
       for (let j = 1; j <= 4; j++) {
         try {
-          document.querySelector(`#page-quizz-${sexArr[k]}-${i}-answer-${j}`).addEventListener('click', function (el) {
+          document.querySelector(`#page-quizz-${i}-answer-${j}`).addEventListener('click', function (el) {
             /*
             // снимаем выделение со всех ответов
             for (let p = 1; p <= 4; p++) {

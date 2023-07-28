@@ -147,6 +147,7 @@ body {
 
 /* Стили для текста вопроса*/
 .question {
+  display: none;
   position: absolute;
   margin: -440px 300px;
   width: 600px;
@@ -260,22 +261,15 @@ body {
 #page-name,
 #page-name-man,
 #page-name-woman,
+#page-robo,
 #page-map-1,
 #page-map-2,
 #page-map-3,
 #page-map-4,
 #page-map-5,
 #page-map-old,
-#page-quizz-man-1,
-#page-quizz-woman-1,
-#page-quizz-man-2,
-#page-quizz-woman-2,
-#page-quizz-man-3,
-#page-quizz-woman-3,
-#page-quizz-man-4,
-#page-quizz-woman-4,
-#page-quizz-man-5,
-#page-quizz-woman-5,
+#page-quizz-1,
+#page-quizz-2,
 #page-answer-1-yes,
 #page-answer-1-no,
 #page-answer-2-yes,
